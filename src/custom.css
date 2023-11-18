@@ -10,3 +10,6 @@ body{
     background-color: var(--main-white);
     font-family: Comfortaa;
 }
+img{
+    width: 100%;
+}

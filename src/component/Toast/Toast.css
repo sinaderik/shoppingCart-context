@@ -1,0 +1,50 @@
+.toast.show {
+    /* animation: myAnim 1s linear 0s 1 normal forwards, fadeOut 1s linear 2.5s 1 normal forwards; */
+
+    animation: myAnim 1s ease 0s 1 normal forwards, exitMyAnim 1s ease 2.5s 1 normal forwards
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes exitMyAnim {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+}
+/* @keyframes myAnim {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+} */

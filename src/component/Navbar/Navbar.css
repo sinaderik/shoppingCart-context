@@ -33,3 +33,6 @@
     border-radius: 100%;
     
 }
+.cart-icon{
+    cursor: pointer;
+}
